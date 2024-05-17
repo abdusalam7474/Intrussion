@@ -85,6 +85,7 @@ with col3:
 st.markdown(
     """
     ***mapping for attack subtypes:*** {'combo': 0, 'junk': 1, 'scan': 2, 'tcp': 3, 'udp': 4, 'ack': 5, 'syn': 6, 'udpplain': 7, 'Normal': 8}
+    
     ***mapping for attack types:*** {'gafgyt': 0, 'mirai': 1, 'Normal': 2}
     """
 )
