@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import random
 
 # (Replace with your actual machine learning model)
 def predict_intrusion(data):
@@ -7,6 +8,17 @@ def predict_intrusion(data):
     # This is a placeholder function for demonstration purposes
     predicted_category = "Normal"  # Replace with actual prediction
     return predicted_category, data
+
+def preset_inputs(dfc):
+  random_selections = {}
+  # Get a random index
+  r_i = random.randint(0, len(dfc)-1)
+  # Extract the item
+  random_item = dfc[(r_i-1):r_i]
+  return random_item
+
+dfz = pd.read_csv("my_data2.csv")
+preset = preset_inputs(dfz)
 
 # Data structure to hold user input (replace with actual feature names)
 user_input = {
@@ -56,7 +68,7 @@ st.markdown(
 st.header("Sensor Readings")
 col1, col2, col3 = st.columns(3)
 with col1:
-    user_input["MI_dir_L0.1_weight"] = st.number_input("MI_dir_L0.1_weight")
+    user_input["MI_dir_L0.1_weight"] = st.number_input("MI_dir_L0.1_weight", value=preset["MI_dir_L0.1_weight""])
     user_input["H_L0.1_weight"] = st.number_input("H_L0.1_weight")
     user_input["HH_L0.1_pcc"] = st.number_input("HH_L0.1_pcc")
     user_input["HH_jit_L0.1_weight"] = st.number_input("HH_jit_L0.1_weight")
