@@ -68,7 +68,7 @@ st.markdown(
 st.header("Sensor Readings")
 col1, col2, col3 = st.columns(3)
 with col1:
-    user_input["MI_dir_L0.1_weight"] = st.number_input("MI_dir_L0.1_weight", value=preset["MI_dir_L0.1_weight""])
+    user_input["MI_dir_L0.1_weight"] = st.number_input("MI_dir_L0.1_weight", value=preset["MI_dir_L0.1_weight"])
     user_input["H_L0.1_weight"] = st.number_input("H_L0.1_weight")
     user_input["HH_L0.1_pcc"] = st.number_input("HH_L0.1_pcc")
     user_input["HH_jit_L0.1_weight"] = st.number_input("HH_jit_L0.1_weight")
