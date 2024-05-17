@@ -56,27 +56,27 @@ st.markdown(
 st.header("Sensor Readings")
 col1, col2, col3 = st.columns(3)
 with col1:
-    user_input["MI_dir_L0.1_weight"] = st.selectbox("MI_dir_L0.1_weight", [0, 25, 30, 35])
-    user_input["H_L0.1_weight"] = st.selectbox("H_L0.1_weight", [30, 50, 70, 90])
-    user_input["HH_L0.1_pcc"] = st.selectbox("HH_L0.1_pcc", [30, 50, 70, 90])
-    user_input["HH_jit_L0.1_weight"] = st.selectbox("HH_jit_L0.1_weight", [30, 50, 70, 90])
+    user_input["MI_dir_L0.1_weight"] = st.number_input("MI_dir_L0.1_weight")
+    user_input["H_L0.1_weight"] = st.number_input("H_L0.1_weight")
+    user_input["HH_L0.1_pcc"] = st.number_input("HH_L0.1_pcc")
+    user_input["HH_jit_L0.1_weight"] = st.number_input("HH_jit_L0.1_weight")
 with col2:
-    user_input["HH_L0.1_weight"] = st.selectbox("HH_L0.1_weight", ["Low", "Medium", "High"])
-    user_input["HH_L0.1_std"] = st.selectbox("HH_L0.1_std", [980, 1013, 1030])
-    user_input["HH_jit_L0.1_mean"] = st.selectbox("HH_jit_L0.1_mean", [30, 50, 70, 90])
-    user_input["HpHp_L0.1_std"] = st.selectbox("HpHp_L0.1_std", [30, 50, 70, 90])
+    user_input["HH_L0.1_weight"] = st.number_input("HH_L0.1_weight")
+    user_input["HH_L0.1_std"] = st.number_input("HH_L0.1_std")
+    user_input["HH_jit_L0.1_mean"] = st.number_input("HH_jit_L0.1_mean")
+    user_input["HpHp_L0.1_std"] = st.number_input("HpHp_L0.1_std")
 with col3:
-    user_input["HH_L0.1_radius"] = st.selectbox("HH_L0.1_radius", ["No", "Yes"])
-    user_input["HH_L0.1_covariance"] = st.selectbox("HH_L0.1_covariance", ["Normal", "Abnormal"])
-    user_input["HpHp_L0.1_radius"] = st.selectbox("HpHp_L0.1_radius", [30, 50, 70, 90])
-    user_input["HpHp_L0.1_covariance"] = st.selectbox("HpHp_L0.1_covariance", [30, 50, 70, 90])
+    user_input["HH_L0.1_radius"] = st.number_input("HH_L0.1_radius")
+    user_input["HH_L0.1_covariance"] = st.number_input("HH_L0.1_covariance")
+    user_input["HpHp_L0.1_radius"] = st.number_input("HpHp_L0.1_radius")
+    user_input["HpHp_L0.1_covariance"] = st.number_input("HpHp_L0.1_covariance")
 
 col1, col2 = st.columns(2)
 with col1:
-    user_input["Attack"] = st.selectbox("Attack", ["Low", "High", "Unusual"])
-    user_input["HpHp_L0.1_pcc"] = st.selectbox("HpHp_L0.1_pcc", [30, 50, 70, 90])
+    user_input["Attack"] = st.number_input("Attack")
+    user_input["HpHp_L0.1_pcc"] = st.number_input("HpHp_L0.1_pcc", value=55)
 with col2:
-    user_input["Attack_subType"] = st.selectbox("Attack_subType", ["Normal", "Elevated"])
+    user_input["Attack_subType"] = st.number_input("Attack_subType")
 
 # Prediction button and results section
 predict_button = st.button("Predict")
