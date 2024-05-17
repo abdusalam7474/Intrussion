@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 # (Replace with your actual machine learning model)
 def predict_intrusion(data, model):
-    df = pd.DataFrame.from_dict(data)
+    df = pd.DataFrame.from_dict(data, orient='index')
     #df = df.transpose()
     pred = [0] #model.predict(df)
     if pred[0] == 1:
