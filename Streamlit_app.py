@@ -64,7 +64,7 @@ st.set_page_config(page_title="IoT Intrusion Detection", layout="wide")
 with st.sidebar:
     st.header("Settings")
     # Add options for model selection, data preprocessing, etc. (if applicable)
-    model_name = st.select_box("select the model for prediction", ["Random forest", "Support Vector Machine", "Decision Tree"])
+    model_name = st.selectbox("select the model for prediction", ["Random forest", "Support Vector Machine", "Decision Tree"])
     selected_model = models[model_name]
 
 st.title("IoT Intrusion Detection App")
