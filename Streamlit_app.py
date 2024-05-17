@@ -82,7 +82,11 @@ with col3:
     user_input["HH_L0.1_covariance"] = st.number_input("HH_L0.1_covariance", value=(preset["HH_L0.1_covariance"]).iloc[0], format="%.15f")
     user_input["HpHp_L0.1_radius"] = st.number_input("HpHp_L0.1_radius", value=(preset["HpHp_L0.1_radius"]).iloc[0], format="%.15f")
     user_input["HpHp_L0.1_covariance"] = st.number_input("HpHp_L0.1_covariance", value=(preset["HpHp_L0.1_covariance"]).iloc[0], format="%.15f")
-
+st.markdown(
+    """
+    mapping for attack subtypes: {'combo': 0, 'junk': 1, 'scan': 2, 'tcp': 3, 'udp': 4, 'ack': 5, 'syn': 6, 'udpplain': 7, 'Normal': 8}
+    """
+)
 col1, col2 = st.columns(2)
 with col1:
     user_input["Attack"] = st.number_input("Attack", value=(preset["Attack"]).iloc[0])
