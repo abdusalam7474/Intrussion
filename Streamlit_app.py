@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 def predict_intrusion(data, model):
     df = pd.DataFrame.from_dict(data, orient='index')
     #df = df.transpose()
-    pred = [0] #model.predict(df)
+    pred = model.predict(df)
     if pred[0] == 1:
         predicted_category = "Normal"
     else:
