@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import random
+import random
 
 # (Replace with your actual machine learning model)
 def predict_intrusion(data):
@@ -9,13 +9,13 @@ def predict_intrusion(data):
     predicted_category = "Normal"  # Replace with actual prediction
     return predicted_category, data
 
-def preset_inputs(dfc):
-  random_selections = {}
+def preset_inputs(dfc):
+  random_selections = {}
   # Get a random index
-  r_i = random.randint(0, len(dfc)-1)
+  r_i = random.randint(0, len(dfc)-1)
   # Extract the item
-  random_item = dfc[(r_i-1):r_i]
-  return random_item
+  random_item = dfc[(r_i-1):r_i]
+  return random_item
 
 dfz = pd.read_csv("my_data2.csv")
 preset = preset_inputs(dfz)
