@@ -2,7 +2,9 @@ import streamlit as st
 import pandas as pd
 import random
 import joblib
-
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 
 # (Replace with your actual machine learning model)
 def predict_intrusion(data, model):
