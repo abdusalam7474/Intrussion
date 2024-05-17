@@ -76,9 +76,10 @@ st.markdown(
 
     **How to Use:**
 
-    1. Enter or Select a entry for each value from the corresponding drop-down menus.
-    2. Click the "Predict" button.
-    3. The app will display the predicted category ("Normal" or "Intrusion") and the provided sensor readings in a DataFrame.
+    1. Enter or or use the prefilled valuus (Prefilled values are randomly generated from the test set of the original dataset).
+    2. Sellect your model of choice from the left sidebar.
+    3. Click the "Predict" button.
+    4. The app will display the predicted category ("Normal" or "Intrusion") and the provided sensor readings in a DataFrame.
 
     **Disclaimer:** This app is for demonstration purposes only. The accuracy of the predictions depends on the quality of the underlying machine learning model and sensor data. For real-world security applications, consult with security professionals.
     """
