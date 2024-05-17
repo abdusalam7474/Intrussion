@@ -69,26 +69,26 @@ st.header("Sensor Readings")
 col1, col2, col3 = st.columns(3)
 with col1:
     user_input["MI_dir_L0.1_weight"] = st.number_input("MI_dir_L0.1_weight", value=(preset["MI_dir_L0.1_weight"]).iloc[0])
-    user_input["H_L0.1_weight"] = st.number_input("H_L0.1_weight", value=(preset["H_L0.1_weight"].iloc[0])
-    user_input["HH_L0.1_pcc"] = st.number_input("HH_L0.1_pcc", value=(preset["HH_L0.1_pcc"].iloc[0])
-    user_input["HH_jit_L0.1_weight"] = st.number_input("HH_jit_L0.1_weight", value=(preset["HH_jit_L0.1_weight"].iloc[0])
+    user_input["H_L0.1_weight"] = st.number_input("H_L0.1_weight", value=(preset["H_L0.1_weight"]).iloc[0])
+    user_input["HH_L0.1_pcc"] = st.number_input("HH_L0.1_pcc", value=(preset["HH_L0.1_pcc"]).iloc[0])
+    user_input["HH_jit_L0.1_weight"] = st.number_input("HH_jit_L0.1_weight", value=(preset["HH_jit_L0.1_weight"]).iloc[0])
 with col2:
-    user_input["HH_L0.1_weight"] = st.number_input("HH_L0.1_weight", value=(preset["HH_L0.1_weight"].iloc[0])
-    user_input["HH_L0.1_std"] = st.number_input("HH_L0.1_std", value=(preset["HH_L0.1_std"].iloc[0])
-    user_input["HH_jit_L0.1_mean"] = st.number_input("HH_jit_L0.1_mean", value=(preset["HH_jit_L0.1_mean"].iloc[0])
-    user_input["HpHp_L0.1_std"] = st.number_input("HpHp_L0.1_std", value=(preset["HpHp_L0.1_std"].iloc[0])
+    user_input["HH_L0.1_weight"] = st.number_input("HH_L0.1_weight", value=(preset["HH_L0.1_weight"]).iloc[0])
+    user_input["HH_L0.1_std"] = st.number_input("HH_L0.1_std", value=(preset["HH_L0.1_std"]).iloc[0])
+    user_input["HH_jit_L0.1_mean"] = st.number_input("HH_jit_L0.1_mean", value=(preset["HH_jit_L0.1_mean"]).iloc[0])
+    user_input["HpHp_L0.1_std"] = st.number_input("HpHp_L0.1_std", value=(preset["HpHp_L0.1_std"]).iloc[0])
 with col3:
-    user_input["HH_L0.1_radius"] = st.number_input("HH_L0.1_radius", value=(preset["HH_L0.1_radius"].iloc[0])
-    user_input["HH_L0.1_covariance"] = st.number_input("HH_L0.1_covariance", value=(preset["HH_L0.1_covariance"].iloc[0])
-    user_input["HpHp_L0.1_radius"] = st.number_input("HpHp_L0.1_radius", value=(preset["HpHp_L0.1_radius"].iloc[0])
-    user_input["HpHp_L0.1_covariance"] = st.number_input("HpHp_L0.1_covariance", value=(preset["HpHp_L0.1_covariance"].iloc[0])
+    user_input["HH_L0.1_radius"] = st.number_input("HH_L0.1_radius", value=(preset["HH_L0.1_radius"]).iloc[0])
+    user_input["HH_L0.1_covariance"] = st.number_input("HH_L0.1_covariance", value=(preset["HH_L0.1_covariance"]).iloc[0])
+    user_input["HpHp_L0.1_radius"] = st.number_input("HpHp_L0.1_radius", value=(preset["HpHp_L0.1_radius"]).iloc[0])
+    user_input["HpHp_L0.1_covariance"] = st.number_input("HpHp_L0.1_covariance", value=(preset["HpHp_L0.1_covariance"]).iloc[0])
 
 col1, col2 = st.columns(2)
 with col1:
-    user_input["Attack"] = st.number_input("Attack", value=(preset["Attack"].iloc[0])
-    user_input["HpHp_L0.1_pcc"] = st.number_input("HpHp_L0.1_pcc", value=(preset["HpHp_L0.1_pcc"].iloc[0])
+    user_input["Attack"] = st.number_input("Attack", value=(preset["Attack"]).iloc[0])
+    user_input["HpHp_L0.1_pcc"] = st.number_input("HpHp_L0.1_pcc", value=(preset["HpHp_L0.1_pcc"]).iloc[0])
 with col2:
-    user_input["Attack_subType"] = st.number_input("Attack_subType", value=(preset["Attack_subType"].iloc[0])
+    user_input["Attack_subType"] = st.number_input("Attack_subType", value=(preset["Attack_subType"]).iloc[0])
 
 # Prediction button and results section
 predict_button = st.button("Predict")
