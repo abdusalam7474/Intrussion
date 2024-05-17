@@ -63,18 +63,18 @@ st.markdown(
 st.header("Sensor Readings")
 col1, col2, col3 = st.columns(3)
 with col1:
-    user_input["MI_dir_L0.1_weight"] = st.selectbox("Temperature", [0, 25, 30, 35])
-    user_input["H_L0.1_weight"] = st.selectbox("Humidity", [30, 50, 70, 90])
-    user_input["HH_L0.1_pcc"] = st.selectbox("Humidity", [30, 50, 70, 90])
-    user_input["HH_jit_L0.1_weight"] = st.selectbox("Humidity", [30, 50, 70, 90])
+    user_input["MI_dir_L0.1_weight"] = st.selectbox("MI_dir_L0.1_weight", [0, 25, 30, 35])
+    user_input["H_L0.1_weight"] = st.selectbox("H_L0.1_weight", [30, 50, 70, 90])
+    user_input["HH_L0.1_pcc"] = st.selectbox("HH_L0.1_pcc", [30, 50, 70, 90])
+    user_input["HH_jit_L0.1_weight"] = st.selectbox("HH_jit_L0.1_weight", [30, 50, 70, 90])
 with col2:
-    user_input["HH_L0.1_weight"] = st.selectbox("Light", ["Low", "Medium", "High"])
-    user_input["HH_L0.1_std"] = st.selectbox("Pressure", [980, 1013, 1030])
+    user_input["HH_L0.1_weight"] = st.selectbox("HH_L0.1_weight", ["Low", "Medium", "High"])
+    user_input["HH_L0.1_std"] = st.selectbox("HH_L0.1_std", [980, 1013, 1030])
     user_input["HH_jit_L0.1_mean"] = st.selectbox("HH_jit_L0.1_mean", [30, 50, 70, 90])
     user_input["HpHp_L0.1_std"] = st.selectbox("HpHp_L0.1_std", [30, 50, 70, 90])
 with col3:
-    user_input["HH_L0.1_radius"] = st.selectbox("Motion", ["No", "Yes"])
-    user_input["HH_L0.1_covariance"] = st.selectbox("Audio", ["Normal", "Abnormal"])
+    user_input["HH_L0.1_radius"] = st.selectbox("HH_L0.1_radius", ["No", "Yes"])
+    user_input["HH_L0.1_covariance"] = st.selectbox("HH_L0.1_covariance", ["Normal", "Abnormal"])
     user_input["HpHp_L0.1_radius"] = st.selectbox("HpHp_L0.1_radius", [30, 50, 70, 90])
     user_input["HpHp_L0.1_covariance"] = st.selectbox("HpHp_L0.1_covariance", [30, 50, 70, 90])
 
