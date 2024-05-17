@@ -40,18 +40,11 @@ st.title("IoT Intrusion Detection App")
 # Overview section
 st.markdown(
     """
-    This app helps you detect potential intrusions in your IoT network by analyzing sensor data from your devices. It utilizes a machine learning model to classify various sensor readings as normal or indicative of an intrusion attempt.
-
-    **Key Features:**
-
-    * User-friendly interface with clear instructions.
-    * Eight drop-down menus for easy data input.
-    * Real-time prediction display, including a comprehensive DataFrame and a clear text representation of the predicted category.
-    * (Optional) Sidebar for additional settings (model selection, data preprocessing, etc.).
+    This app is built to help detect potential intrusions in an IoT network by analyzing data from your devices. It utilizes a machine learning model we trained to classify various readings as normal or indicative of an intrusion attempt.
 
     **How to Use:**
 
-    1. Select the current readings for each sensor from the corresponding drop-down menus.
+    1. Enter or Select a entry for each value from the corresponding drop-down menus.
     2. Click the "Predict" button.
     3. The app will display the predicted category ("Normal" or "Intrusion") and the provided sensor readings in a DataFrame.
 
