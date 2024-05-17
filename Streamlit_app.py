@@ -94,10 +94,10 @@ st.markdown(
 )
 col1, col2 = st.columns(2)
 with col1:
-    user_input["Attack"] = st.number_input("Attack", value=(preset["Attack"]).iloc[0])
+    user_input["Attack"] = st.number_input("Attack", value=(preset["Attack"]).iloc[0], min_value=(0), max_value=(2))
     user_input["HpHp_L0.1_pcc"] = st.number_input("HpHp_L0.1_pcc", value=(preset["HpHp_L0.1_pcc"]).iloc[0], format="%.15f")
 with col2:
-    user_input["Attack_subType"] = st.number_input("Attack_subType", value=(preset["Attack_subType"]).iloc[0])
+    user_input["Attack_subType"] = st.number_input("Attack_subType", value=(preset["Attack_subType"]).iloc[0], min_value=(0), max_value=(8))
 
 # Prediction button and results section
 predict_button = st.button("Predict")
