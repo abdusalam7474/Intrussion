@@ -84,7 +84,8 @@ with col3:
     user_input["HpHp_L0.1_covariance"] = st.number_input("HpHp_L0.1_covariance", value=(preset["HpHp_L0.1_covariance"]).iloc[0], format="%.15f")
 st.markdown(
     """
-    mapping for attack subtypes: {'combo': 0, 'junk': 1, 'scan': 2, 'tcp': 3, 'udp': 4, 'ack': 5, 'syn': 6, 'udpplain': 7, 'Normal': 8}
+    ***mapping for attack subtypes:*** {'combo': 0, 'junk': 1, 'scan': 2, 'tcp': 3, 'udp': 4, 'ack': 5, 'syn': 6, 'udpplain': 7, 'Normal': 8}
+    ***mapping for attack types:*** {'gafgyt': 0, 'mirai': 1, 'Normal': 2}
     """
 )
 col1, col2 = st.columns(2)
